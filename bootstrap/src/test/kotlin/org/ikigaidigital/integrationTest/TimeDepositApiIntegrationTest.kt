@@ -40,7 +40,15 @@ class TimeDepositApiIntegrationTest : IntegrationTest() {
     }
 
     @Test
+    @Sql(statements = ["TRUNCATE withdrawals, time_deposits"]) // method-level @Sql replaces the class-level seed
     fun `POST on empty database returns 204`() {
-        // overrides the class-level seed
+        mockMvc.post("/time-deposits/balance-updates").andExpect {
+            status { isNoContent() }
+        }
+
+        mockMvc.get("/time-deposits").andExpect {
+            status { isOk() }
+            jsonPath("$.length()") { value(0) }
+        }
     }
 }
