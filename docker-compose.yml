@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: time_deposit
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: time_deposit
+    ports:
+      - "5432:5432"
+
