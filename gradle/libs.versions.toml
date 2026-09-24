@@ -1,0 +1,37 @@
+[versions]
+kotlin = "2.3.21"
+spring-boot = "4.1.1"
+spring-dependency-management = "1.1.7"
+
+[libraries]
+
+spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
+spring-boot-starter-data-jpa  = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring-boot-starter-flyway = { module = "org.springframework.boot:spring-boot-starter-flyway" }
+jackson-module-kotlin = { module = "tools.jackson.module:jackson-module-kotlin" }
+
+#Testing
+spring-boot-starter-webmvc-test = { module = "org.springframework.boot:spring-boot-starter-webmvc-test" }
+spring-boot-starter-data-jpa-test = { module = "org.springframework.boot:spring-boot-starter-data-jpa-test" }
+spring-boot-starter-flyway-test   = { module = "org.springframework.boot:spring-boot-starter-flyway-test" }
+kotlin-test-junit5     = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+#Testcontainers
+testcontainers-postgres = { module = "org.testcontainers:testcontainers-postgresql"}
+spring-boot-testcontainers = { module = "org.springframework.boot:spring-boot-testcontainers" }
+testcontainers-junit-jupiter = { module = "org.testcontainers:testcontainers-junit-jupiter"}
+
+#Database
+postgresql = { module = "org.postgresql:postgresql" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+
+#Flyway
+flyway-database-postgresql = { module = "org.flywaydb:flyway-database-postgresql"}
+
+[plugins]
+kotlin-jvm                  = { id = "org.jetbrains.kotlin.jvm",            version.ref = "kotlin" }
+kotlin-spring               = { id = "org.jetbrains.kotlin.plugin.spring",  version.ref = "kotlin" }
+spring-boot                 = { id = "org.springframework.boot",            version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management",   version.ref = "spring-dependency-management" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
