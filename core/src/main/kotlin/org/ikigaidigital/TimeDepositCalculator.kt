@@ -5,8 +5,6 @@ import org.ikigaidigital.strategy.BasicInterestStrategy
 import org.ikigaidigital.strategy.InterestStrategy
 import org.ikigaidigital.strategy.PremiumInterestStrategy
 import org.ikigaidigital.strategy.StudentInterestStrategy
-import java.math.BigDecimal
-import java.math.RoundingMode
 
 class TimeDepositCalculator(
     strategies: List<InterestStrategy> = listOf(
