@@ -1,3 +1,16 @@
 spring:
   application:
     name: time-deposit-service
+  # Local defaults; override with SPRING_DATASOURCE_URL / _USERNAME / _PASSWORD.
+  datasource:
+    url: jdbc:postgresql://localhost:5432/time_deposit
+    username: postgres
+    password: postgres
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate   # Flyway owns the schema; Hibernate only checks entities match it
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
