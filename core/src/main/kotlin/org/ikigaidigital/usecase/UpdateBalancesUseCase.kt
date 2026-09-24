@@ -1,7 +1,9 @@
 package org.ikigaidigital.usecase
 
 /**
- * Applies one month of interest to the balance of every stored time deposit.
+ * Assumption: `days` (deposit age) is maintained outside this service, e.g. by a daily
+ * batch in the core banking system. This use case only applies one month of interest
+ * based on the current age and does not advance `days` itself.
  */
 interface UpdateBalancesUseCase {
 
