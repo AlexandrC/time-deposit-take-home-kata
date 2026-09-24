@@ -21,7 +21,7 @@ class TimeDepositCalculator(
     fun updateBalance(xs: List<TimeDeposit>) {
         for (deposit in xs) {
             val interest = provide(deposit.planType)?.calculateMonthlyInterest(deposit) ?: 0.0
-            deposit.balance += BigDecimal(interest).setScale(2, RoundingMode.HALF_UP).toDouble()
+            deposit.balance += interest
         }
     }
 

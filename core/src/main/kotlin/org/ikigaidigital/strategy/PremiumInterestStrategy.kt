@@ -7,7 +7,7 @@ class PremiumInterestStrategy : InterestStrategy {
 
     override fun calculateMonthlyInterest(deposit: TimeDeposit): Double =
         if (deposit.days > INTEREST_STARTS_AFTER_DAYS) {
-            deposit.balance * ANNUAL_RATE / MONTHS_PER_YEAR
+            (deposit.balance * ANNUAL_RATE / MONTHS_PER_YEAR).roundToCents()
         } else {
             0.0
         }
