@@ -1,2 +1,4 @@
 rootProject.name = "time-deposit-take-home-kata"
-include("core", "bootstrap")
+include("core",
+    "bootstrap",
+    "app")
