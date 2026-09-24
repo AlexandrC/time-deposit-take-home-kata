@@ -15,6 +15,7 @@ junit-jupiter   = { module = "org.junit.jupiter:junit-jupiter" }
 assertj-core    = { module = "org.assertj:assertj-core" }
 
 #Testing
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 spring-boot-starter-webmvc-test = { module = "org.springframework.boot:spring-boot-starter-webmvc-test" }
 spring-boot-starter-data-jpa-test = { module = "org.springframework.boot:spring-boot-starter-data-jpa-test" }
 spring-boot-starter-flyway-test   = { module = "org.springframework.boot:spring-boot-starter-flyway-test" }
@@ -37,5 +38,4 @@ flyway-database-postgresql = { module = "org.flywaydb:flyway-database-postgresql
 kotlin-jvm                  = { id = "org.jetbrains.kotlin.jvm",            version.ref = "kotlin" }
 kotlin-spring               = { id = "org.jetbrains.kotlin.plugin.spring",  version.ref = "kotlin" }
 spring-boot                 = { id = "org.springframework.boot",            version.ref = "spring-boot" }
-spring-dependency-management = { id = "io.spring.dependency-management",   version.ref = "spring-dependency-management" }
 kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
