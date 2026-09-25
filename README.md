@@ -94,7 +94,6 @@ Docker must be running: persistence and end-to-end tests use a real PostgreSQL v
 
 ## AI-assisted development
 
-<!-- TODO: fill in / adjust -->
 
 **Tools**
 - Claude (Anthropic) in the Claude desktop app (Cowork mode) with access to the project folder – used as a reviewer and pair programmer.

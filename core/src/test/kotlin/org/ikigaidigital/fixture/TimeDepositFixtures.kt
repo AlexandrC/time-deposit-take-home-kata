@@ -1,6 +1,7 @@
 package org.ikigaidigital.fixture
 
 import org.ikigaidigital.TimeDeposit
+import org.ikigaidigital.model.PlanType
 
 object TimeDepositFixtures {
 
@@ -10,7 +11,7 @@ object TimeDepositFixtures {
         balance: Double = 100.00
     ) = TimeDeposit(
             id = id,
-            planType = "basic",
+            planType = PlanType.BASIC.code,
             days = days,
             balance = balance
         )
@@ -20,7 +21,7 @@ object TimeDepositFixtures {
         balance: Double = 100.00
     ) = TimeDeposit(
             id = id,
-            planType = "student",
+            planType = PlanType.STUDENT.code,
             days = days,
             balance = balance
         )
@@ -30,7 +31,7 @@ object TimeDepositFixtures {
         balance: Double = 100.00
     ) = TimeDeposit(
             id = id,
-            planType = "premium",
+            planType = PlanType.PREMIUM.code,
             days = days,
             balance = balance
         )
